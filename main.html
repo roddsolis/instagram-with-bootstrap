@@ -39,20 +39,21 @@
       <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active px-3 bg-black" id="pills-home-tab" data-bs-toggle="pill"
-            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+            data-bs-target="#grid-view" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
               class="bi bi-grid-3x3 text-white"></i></button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link px-3" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          <button class="nav-link px-3 bg-black" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#single-view"
             type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
               class="bi bi-square-fill text-white"></i></button>
         </li>
       </ul>
     </div>
+    <!-- contenido 1 -->
     <div class="tab-content p-0 d-flex justify-content-center" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="tab-pane fade show active" id="grid-view" role="tabpanel" aria-labelledby="pills-home-tab">
         <!-- fila 1 -->
-        <div class="row p-0 gx-3">
+        <div class="row p-0 g-3">
           <div class="col-md-4 ">
             <img src="https://picsum.photos/id/786/500/500" alt="" class="img-fluid rounded-3">
           </div>
@@ -89,9 +90,10 @@
           </div>
         </div>
       </div>
-      <!-- aca comienza el contenido 2 -->
-      <div class="tab-pane fade col-lg-6 col-sm-12" id="pills-profile" role="tabpanel"
+      <!-- Contenido 2 -->
+      <div class="tab-pane fade col-lg-6 col-sm-12" id="single-view" role="tabpanel"
         aria-labelledby="pills-profile-tab">
+]
         <div class="text-white bg-black mb-3 border-bottom border-secondary border-opacity-25">
           <div class="py-3 d-flex flex-row justify-content-between align-items-center">
             <h6 class="m-0">titulo</h6>
@@ -106,20 +108,22 @@
           </div>
         </div>
       </div>
+
     </div>
     <!-- Modal -->
-    <div class="modal fade bg-black bg-opacity-10" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade bg-black bg-opacity-10" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content bg-black text-white border-1 border-secondary border-opacity-25 shadow-lg">
           <div class="modal-header border-0">
             <h6 class="modal-title fs-3" id="exampleModalLabel">Create a new post</h6>
-            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
           </div>
           <div class="modal-body py-0">
             <form action="">
               <div class="mb-3">
                 <label for="message-text" class="col-form-label">Caption</label>
-                <textarea class="form-control bg-secondary border-secondary border-opacity-10" id="message-text" placeholder="Add the camption of your post here"></textarea>
+                <textarea class="form-control bg-secondary border-secondary border-opacity-10" id="message-text"
+                  placeholder="Add the camption of your post here"></textarea>
               </div>
             </form>
           </div>
